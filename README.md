@@ -60,6 +60,7 @@ It can also create a basic `auth.json` file, but having a preconfigured pi insta
 
 ## Notes
 
+- This is a prerelease version, please [report any feedback and issues](https://github.com/cdervis/vscode-pi) to help improve it!
 - The extension is a UI layer built on top of pi. Live pi state remains the source of truth.
 
 ## Troubleshooting
@@ -86,5 +87,3 @@ It can also create a basic `auth.json` file, but having a preconfigured pi insta
 - After updating a key, restart pi from the extension so the spawned process picks up the new environment.
 
 > **Unofficial extension**. This project is community-built and is not affiliated with or endorsed by the [pi agent](https://pi.dev) project.
-
-> **This is a prerelease version, please [report any feedback and issues](https://github.com/cdervis/vscode-pi) to help improve it!**
