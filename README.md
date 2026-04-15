@@ -1,10 +1,6 @@
 # pi Agent for VS Code
 
-> **Unofficial extension**. This project is community-built and is not affiliated with or endorsed by the [pi agent](https://pi.dev) project.
-
-> **This is a prerelease version, please [report any feedback and issues](https://github.com/cdervis/vscode-pi) to help improve it!**
-
-Run your local `pi` coding agent directly inside VS Code.
+## Run your local `pi` coding agent directly inside VS Code.
 
 `vscode-pi` is a sidebar extension that launches your installed `pi` binary in RPC mode and turns it into a VS Code-native chat workflow. It adds streaming transcript rendering, tool output UI, session restore/history, model switching, and file context-aware prompts.
 
@@ -103,6 +99,10 @@ It can also create a basic `auth.json` file, but having a preconfigured pi insta
 
 - Re-check the provider credentials stored in your pi config or VS Code-backed secrets.
 - After updating a key, restart pi from the extension so the spawned process picks up the new environment.
+
+> **Unofficial extension**. This project is community-built and is not affiliated with or endorsed by the [pi agent](https://pi.dev) project.
+
+> **This is a prerelease version, please [report any feedback and issues](https://github.com/cdervis/vscode-pi) to help improve it!**
 
 ## License
 
