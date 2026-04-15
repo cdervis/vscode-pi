@@ -1,6 +1,6 @@
 # pi Agent for VS Code
 
-## Run your local `pi` coding agent directly inside VS Code.
+## Run your local pi coding agent directly inside VS Code.
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-light.png">
@@ -20,7 +20,7 @@
   <img src="https://img.shields.io/badge/pi-%E2%89%A50.66.1-purple" alt="Minimum pi version">
 </p>
 
-This is a sidebar extension that launches your installed `pi` binary in RPC mode and turns it into a VS Code-native chat workflow. It adds streaming transcript rendering, tool output UI, session restore/history, model switching, and file context-aware prompts.
+This is a sidebar extension that launches your installed [pi](https://pi.dev) binary in RPC mode and turns it into a VS Code-native chat workflow. It adds streaming transcript rendering, tool output UI, session restore/history, model switching, and file context-aware prompts.
 
 All while staying lightweight and true to pi's minimalism-focused philosophy.
 
