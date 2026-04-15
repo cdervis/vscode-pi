@@ -58,39 +58,6 @@ It can also create a basic `auth.json` file, but having a preconfigured pi insta
 3. [Configure pi](https://github.com/cdervis/vscode-pi#readme) to your liking.
 4. Open the `PI AGENT` view in the activity bar and start a chat.
 
-## Repository
-
-- Source: [github.com/cdervis/vscode-pi](https://github.com/cdervis/vscode-pi)
-- Issues: [github.com/cdervis/vscode-pi/issues](https://github.com/cdervis/vscode-pi/issues)
-
-## Commands
-
-| Command | Description |
-| --- | --- |
-| `pi: Focus Chat Input` | Focus the sidebar composer |
-| `pi: New Session` | Start a new chat session |
-| `pi: Switch Model` | Open model switching |
-| `pi: Compact Context` | Compact the current session context |
-| `pi: Cycle Model` | Cycle through available models |
-| `pi: Cycle Thinking Level` | Cycle through thinking levels |
-
-## Settings
-
-| Setting | Default | Description |
-| --- | --- | --- |
-| `pi.binaryPath` | `pi` | Path to the local pi executable |
-| `pi.agentDir` | empty | Override pi's agent directory |
-| `pi.thinkingLevel` | `medium` | Default reasoning level |
-| `pi.autoCompact` | `true` | Enable automatic context compaction |
-| `pi.fontSize` | `13` | Chat font size in pixels |
-| `pi.showLabels` | `true` | Show `You` and `Pi` labels |
-| `pi.showThinking` | `true` | Show assistant thinking blocks |
-| `pi.context.autoAttach` | `true` | Auto-attach editor context to prompts |
-| `pi.context.includeEditor` | `true` | Include active editor metadata in prompt context |
-| `pi.context.includeSelection` | `true` | Include selected text in prompt context |
-| `pi.context.includeDiagnostics` | `true` | Include diagnostics in prompt context |
-| `pi.context.includeGit` | `true` | Include git status in prompt context |
-
 ## Notes
 
 - The extension is a UI layer built on top of pi. Live pi state remains the source of truth.
@@ -121,46 +88,3 @@ It can also create a basic `auth.json` file, but having a preconfigured pi insta
 > **Unofficial extension**. This project is community-built and is not affiliated with or endorsed by the [pi agent](https://pi.dev) project.
 
 > **This is a prerelease version, please [report any feedback and issues](https://github.com/cdervis/vscode-pi) to help improve it!**
-
-## License
-
-PRERELEASE LICENSE WITH PLANNED MIT RELEASE
-
-Copyright (c) 2026 Cem Dervis
-All rights reserved.
-
-IMPORTANT NOTICE:
-This software is currently distributed as a prerelease under the terms of this license.
-It is intended from the outset that, once the software exits prerelease, the stable release
-of the software **will be made available under the MIT License**.
-Until then, all prerelease versions remain subject to this prerelease license unless a specific
-version is explicitly relicensed by the copyright holder.
-
-Permission is granted to download, install, and use this software in executable form, free of
-charge, for any lawful purpose during the prerelease phase.
-
-You may not:
-- modify, adapt, translate, reverse engineer, decompile, or disassemble the software, except where applicable law expressly permits this despite this restriction;
-- redistribute, sublicense, rent, lease, lend, sell, or otherwise make the software available to any third party;
-- remove or alter any copyright, trademark, or other proprietary notices.
-
-No source code is provided, and no right to access, receive, modify, or distribute the source
-code is granted under this license.
-
-This software is licensed, not sold. All rights not expressly granted are reserved by the
-copyright holder.
-
-This software is provided "AS IS", without warranty of any kind, express or implied, including
-without limitation warranties of merchantability, fitness for a particular purpose, and
-noninfringement. To the maximum extent permitted by law, the copyright holder shall not be
-liable for any claim, damages, or other liability arising from or related to the software or
-its use.
-
-MIT transition:
-
-Once the copyright holder designates a release of the software as stable or final, that release
-will be made available under the MIT License, unless stated otherwise by the copyright holder.
-For the avoidance of doubt, prerelease versions distributed under this license remain under this
-license unless and until the copyright holder explicitly relicenses those specific versions.
-
-By downloading, installing, or using the software, you agree to this license.
