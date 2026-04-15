@@ -2,7 +2,25 @@
 
 ## Run your local `pi` coding agent directly inside VS Code.
 
-`vscode-pi` is a sidebar extension that launches your installed `pi` binary in RPC mode and turns it into a VS Code-native chat workflow. It adds streaming transcript rendering, tool output UI, session restore/history, model switching, and file context-aware prompts.
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-dark.png">
+  <img alt="pi Agent for VS Code" src="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-dark.png">
+</picture>
+
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=cdervis.vscode-pi"><img src="https://img.shields.io/badge/VS%20Code-Marketplace-0078D4?logo=visualstudiocode&logoColor=white"></a>
+  <a href="https://open-vsx.org/extension/cdervis/vscode-pi"><img src="https://img.shields.io/badge/Open%20VSX-Registry-C8962E?logo=openvsx&logoColor=black"></a>
+  <a href="https://github.com/cdervis/vscode-pi/releases/latest"><img src="https://img.shields.io/github/v/release/cdervis/vscode-pi?label=Release&logo=github"></a>
+</p>
+
+
+<p align="center">
+  <img src="https://img.shields.io/badge/VS%20Code-%E2%89%A51.85.0-007ACC" alt="Required VS Code version">
+  <img src="https://img.shields.io/badge/pi-%E2%89%A50.66.1-purple" alt="Minimum pi version">
+</p>
+
+This is a sidebar extension that launches your installed `pi` binary in RPC mode and turns it into a VS Code-native chat workflow. It adds streaming transcript rendering, tool output UI, session restore/history, model switching, and file context-aware prompts.
 
 All while staying lightweight and true to pi's minimalism-focused philosophy.
 
