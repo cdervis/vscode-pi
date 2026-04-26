@@ -1,13 +1,13 @@
 # pi Agent for VS Code
 
-## Slow down, pi and VS Code are all you need.
+## Run pi from a focused VS Code sidebar.
 
 A sidebar extension that launches your installed `pi` binary in RPC mode and turns it into a VS Code-native chat workflow. It keeps the agent close to your editor while staying lightweight and true to pi's minimalism.
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-light.png">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-dark.png">
-  <img alt="pi Agent for VS Code" src="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-dark.webp">
+  <img alt="pi Agent for VS Code" src="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-dark.webp">
 </picture>
 
 <p align="center">
@@ -22,6 +22,8 @@ A sidebar extension that launches your installed `pi` binary in RPC mode and tur
 </p>
 
 The extension runs on macOS, Linux, and Windows, including with built-in **on-device** dictation.
+
+[vscode-pi.dev](https://vscode-pi.dev)
 
 ## Features
 
@@ -71,18 +73,6 @@ Dictation supports:
 
 Use `pi.voice.enabled` to show or hide the microphone button. Use `pi.voice.model` to choose between the built-in tiny/base and multilingual/English-only model options. The sidebar shows download and recording progress, and the info menu can remove downloaded dictation models when cached models are present.
 
-## Diagnostics
-
-Diagnostics are off by default. Enable `pi.diagnostics.enabled` only when you are troubleshooting or preparing a support report.
-
-When enabled, the extension writes high-signal progress and error logs to the **pi Diagnostics** output channel. The log includes lifecycle events, startup/runtime errors, model and thinking-level changes, compaction activity, token and session statistics, resource actions, and dictation state. It is intended to help identify why a workflow failed without dumping every internal detail of the extension.
-
-Use **pi: Show Diagnostics Log** to inspect the current log, or **pi: Export Diagnostics Log...** to save it to a file of your choosing. Review exported logs before sharing them.
-
-## Export
-
-Use **Export chat as HTML** from the sidebar info menu to save the current chat transcript. Relative export folders are resolved from the workspace root.
-
 ## Troubleshooting
 
 ### pi is not detected
@@ -119,4 +109,14 @@ Use **Export chat as HTML** from the sidebar info menu to save the current chat 
 - Website: [vscode-pi.dev](https://vscode-pi.dev)
 - Issues: [github.com/cdervis/vscode-pi/issues](https://github.com/cdervis/vscode-pi/issues)
 
-> **Unofficial extension**. This project is community-built and is not affiliated with or endorsed by the [pi agent](https://pi.dev) project.
+## Diagnostics
+
+Diagnostics are off by default. Enable `pi.diagnostics.enabled` only when you are troubleshooting or preparing a support report.
+
+When enabled, the extension writes high-signal progress and error logs to the **pi Diagnostics** output channel. The log includes lifecycle events, startup/runtime errors, model and thinking-level changes, compaction activity, token and session statistics, resource actions, and dictation state. It is intended to help identify why a workflow failed without dumping every internal detail of the extension.
+
+Use **pi: Show Diagnostics Log** to inspect the current log, or **pi: Export Diagnostics Log...** to save it to a file of your choosing. Review exported logs before sharing them.
+
+## Notes
+
+**Unofficial extension**. This project is community-built and is not affiliated with or endorsed by the [pi agent](https://pi.dev) project.
