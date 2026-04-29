@@ -1,8 +1,12 @@
-# pi Agent for VS Code
+<div class="title-block" style="text-align: center;" align="center">
 
-## Run pi from a focused VS Code sidebar.
+# vscode-pi
 
-A sidebar extension that launches your installed `pi` binary in RPC mode and turns it into a VS Code-native chat workflow. It keeps the agent close to your editor while staying lightweight and true to pi's minimalism.
+<p><img title="pi logo" src="media/icon-outlined.png" width="100" height="100"></p>
+
+## Your pi companion for VS Code and VSCodium
+
+An extension that launches your installed [`pi`](https://pi.dev) binary in RPC mode and turns it into a VS Code-native chat workflow. It keeps the agent close to your editor while staying lightweight and true to pi's minimalism.
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cdervis/vscode-pi/main/media/cover-light.webp">
@@ -17,53 +21,53 @@ A sidebar extension that launches your installed `pi` binary in RPC mode and tur
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/VS%20Code-%E2%89%A51.85.0-007ACC" alt="Required VS Code version">
-  <img src="https://img.shields.io/badge/pi-%E2%89%A50.66.1-purple" alt="Minimum pi version">
+  <b><a href="https://vscode-pi.dev">vscode-pi.dev</a></b>
 </p>
 
-The extension runs on macOS, Linux, and Windows, including with built-in **on-device** dictation.
+<p align="center">
+Tested on macOS, Linux, and Windows.
+</p>
 
-[vscode-pi.dev](https://vscode-pi.dev)
+</div>
 
 ## Features
 
 - Sidebar chat built for long-running coding sessions
-- Streaming markdown answers with syntax highlighting
-- Rich tool rendering for read, write, edit, bash, image, and tool output
+- Lightweight and efficient, bring your own pi
+- Answers rendered with full Markdown support
+- Rich tool rendering and streaming
 - Interactive Mermaid diagrams and zoomable image previews
-- Message queuing, steering, and follow-up handling while the agent is busy
+- Message queuing, steering, and follow-up handling
 - Support for your pi prompts and skills, such as `/commit` and `/skill:plan-development`
-- Session manager with search, rename, delete, and forking
+- **Local** microphone dictation, powered by `whisper.cpp`, Rust, and Swift
+- Session and package management from within VS Code
 - Model selector, model cycling, and thinking-level controls
 - Context window tracking, automatic compaction, and manual compaction
 - Workspace-aware `@` file and folder mentions
-- Package management from the command palette and sidebar info menu
-- Local microphone dictation with on-device `whisper.cpp`
-- Auto-attached editor, selection, diagnostics, and git context controls
-- Pasted or dropped image attachments in chat
+- Pasted image attachments in chat
 - Post-run changed-files summaries after editing sessions
 - HTML chat export
-- UI customization for typography, spacing, labels, thinking blocks, separators, and corner style
-- Optional diagnostics logging for troubleshooting startup, runtime, sidebar, resource, and dictation issues
+- Various UI customization options
 
-## Requirements
-
-- VS Code or VSCodium 1.85.0 or newer
-- `pi` 0.66.1 or newer
-- Provider credentials for the model you want to use
-
-If `pi` is not installed yet, the extension can install it during onboarding when npm is available in your environment. You can also point the extension at a custom binary with `pi.binaryPath`.
+Please visit the [homepage](https://vscode-pi.dev) for a comprehensive overview and FAQ.
 
 ## Getting Started
 
-1. Install the extension from the VS Code Marketplace or Open VSX.
-2. Open the `PI AGENT` view in the activity bar.
-3. Follow onboarding if prompted. It can help install `pi`, choose a provider, add credentials, review setup, and select a model.
-4. Start a chat.
+1. Ensure pi is set up
+2. Install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=cdervis.vscode-pi) or [Open VSX](https://open-vsx.org/extension/cdervis/vscode-pi).
+3. Open the `PI AGENT` view in the activity bar.
+4. Follow onboarding if prompted. It can help install `pi`, choose a provider, add credentials, review setup, and select a model.
+5. Start a chat.
 
 ## Dictation
 
-The microphone button uses a bundled native helper and local `whisper.cpp` models. Transcription runs on-device after the selected model has been downloaded once.
+The extension bundles [`whisper.cpp`](https://github.com/ggml-org/whisper.cpp) and native voice helpers written in Rust (Windows, Linux) and Swift (macOS).
+
+When you use the microphone button, the extension will ask for your permission to download the whisper models (configured with `pi.voice.model`) once.
+
+Models are downloaded from: `https://huggingface.co/ggerganov/whisper.cpp/resolve/main/<model-file>`
+
+The dictation will **always run locally, on your device**. The extension will never send any data to any server.
 
 Dictation supports:
 
@@ -71,7 +75,9 @@ Dictation supports:
 - Windows x64 & ARM64
 - Linux x64 & ARM64
 
-Use `pi.voice.enabled` to show or hide the microphone button. Use `pi.voice.model` to choose between the built-in tiny/base and multilingual/English-only model options. The sidebar shows download and recording progress, and the info menu can remove downloaded dictation models when cached models are present.
+Use `pi.voice.enabled` to show or hide the microphone button. Use `pi.voice.model` to choose between the built-in tiny/base and multilingual/English-only model options.
+
+You can always delete the downloaded models via the info menu -> "*Delete downloaded dictation model*".
 
 ## Troubleshooting
 
@@ -104,10 +110,9 @@ Use `pi.voice.enabled` to show or hide the microphone button. Use `pi.voice.mode
 - On unsupported platforms, the microphone button explains that dictation is unavailable.
 - To collect troubleshooting logs, enable `pi.diagnostics.enabled`, reproduce the issue, then run **pi: Export Diagnostics Log...** and include the exported file with your report.
 
-## Support
+## Feedback
 
-- Website: [vscode-pi.dev](https://vscode-pi.dev)
-- Issues: [github.com/cdervis/vscode-pi/issues](https://github.com/cdervis/vscode-pi/issues)
+Please feel free to provide feedback and/or report issues here on GitHub. The extension is currently in a prerelease phase and I appreciate your feedback, as it can help steer the extension in the right direction for all of us.
 
 ## Diagnostics
 
