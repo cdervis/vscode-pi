@@ -17,7 +17,7 @@ An extension that launches your installed [`pi`](https://pi.dev) binary in RPC m
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=cdervis.vscode-pi"><img src="https://img.shields.io/badge/VS%20Code-Marketplace-0078D4?logo=visualstudiocode&logoColor=white"></a>
   <a href="https://open-vsx.org/extension/cdervis/vscode-pi"><img src="https://img.shields.io/badge/Open%20VSX-Registry-C8962E?logo=openvsx&logoColor=black"></a>
-  <a href="https://github.com/cdervis/vscode-pi/releases/latest"><img src="https://img.shields.io/github/v/release/cdervis/vscode-pi?label=Release&logo=github"></a>
+  <a href="https://github.com/cdervis/vscode-pi/releases/latest"><img src="https://badgen.net/github/release/cdervis/vscode-pi?label=Release&icon=github"></a>
 </p>
 
 <p align="center">
