@@ -49,7 +49,7 @@ Tested on macOS, Linux, and Windows.
 - HTML chat export
 - Various UI customization options
 
-Please visit the [homepage](https://vscode-pi.dev) for a comprehensive overview and FAQ.
+Please visit the [homepage](https://vscode-pi.dev) for a comprehensive overview and [FAQ](https://vscode-pi.dev/#faq).
 
 ## Getting Started
 
