@@ -112,11 +112,16 @@ Please feel free to provide feedback and/or [report issues](https://github.com/c
 
 ## Diagnostics
 
+<details>
+<summary>How to diagnose vscode-pi</summary>
+
 Diagnostics are off by default. Enable `pi.diagnostics.enabled` only when you are troubleshooting or preparing a support report.
 
 When enabled, the extension writes high-signal progress and error logs to the **pi Diagnostics** output channel. The log includes lifecycle events, startup/runtime errors, model and thinking-level changes, compaction activity, token and session statistics, resource actions, and dictation state. It is intended to help identify why a workflow failed without dumping every internal detail of the extension.
 
 Use **pi: Show Diagnostics Log** to inspect the current log, or **pi: Export Diagnostics Log...** to save it to a file of your choosing. Review exported logs before sharing them.
+
+</details>
 
 ## Notes
 
