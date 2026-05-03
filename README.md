@@ -32,21 +32,18 @@ Tested on macOS, Linux, and Windows.
 
 ## Features
 
-- Sidebar chat built for long-running coding sessions
+- Built for long-running coding sessions
 - Lightweight and efficient, bring your own pi
-- Answers rendered with full Markdown support
-- Rich tool rendering and streaming
-- Interactive Mermaid diagrams and zoomable image previews
+- Rich tool rendering and streaming, including Mermaid diagrams and math
 - Message queuing, steering, and follow-up handling
-- Support for your pi prompts and skills, such as `/commit` and `/skill:plan-development`
+- Support for your pi **prompts, skills, and extensions**, such as `/commit` and `/skill:plan-development`
 - **Local** microphone dictation, powered by `whisper.cpp`, Rust, and Swift
 - Session and package management from within VS Code
 - Model selector, model cycling, and thinking-level controls
-- Context window tracking, automatic compaction, and manual compaction
+- Context window tracking, automatic compaction, manual compaction
 - Workspace-aware `@` file and folder mentions
 - Pasted image attachments in chat
 - Post-run changed-files summaries after editing sessions
-- HTML chat export
 - Various UI customization options
 
 Please visit the [homepage](https://vscode-pi.dev) for a comprehensive overview and [FAQ](https://vscode-pi.dev/#faq).
@@ -56,8 +53,7 @@ Please visit the [homepage](https://vscode-pi.dev) for a comprehensive overview 
 1. Ensure pi is set up
 2. Install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=cdervis.vscode-pi) or [Open VSX](https://open-vsx.org/extension/cdervis/vscode-pi).
 3. Open the `PI AGENT` view in the activity bar.
-4. Follow onboarding if prompted. It can help install `pi`, choose a provider, add credentials, review setup, and select a model.
-5. Start a chat.
+4. Start a chat.
 
 ## Dictation
 
@@ -78,6 +74,10 @@ Dictation supports:
 Use `pi.voice.enabled` to show or hide the microphone button. Use `pi.voice.model` to choose between the built-in tiny/base and multilingual/English-only model options.
 
 You can always delete the downloaded models via the info menu -> "*Delete downloaded dictation model*".
+
+## Feedback
+
+Please feel free to provide feedback and/or [report issues](https://github.com/cdervis/vscode-pi) here on GitHub. The extension is currently in a prerelease phase and I appreciate your feedback, as it can help steer the extension in the right direction for all of us.
 
 ## Troubleshooting
 
@@ -109,10 +109,6 @@ You can always delete the downloaded models via the info menu -> "*Delete downlo
 - Allow microphone access for VS Code in your OS privacy or audio settings.
 - On unsupported platforms, the microphone button explains that dictation is unavailable.
 - To collect troubleshooting logs, enable `pi.diagnostics.enabled`, reproduce the issue, then run **pi: Export Diagnostics Log...** and include the exported file with your report.
-
-## Feedback
-
-Please feel free to provide feedback and/or report issues here on GitHub. The extension is currently in a prerelease phase and I appreciate your feedback, as it can help steer the extension in the right direction for all of us.
 
 ## Diagnostics
 
