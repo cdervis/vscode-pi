@@ -81,6 +81,9 @@ Please feel free to provide feedback and/or [report issues](https://github.com/c
 
 ## Troubleshooting
 
+<details>
+<summary>Troubleshooting guideline</summary>
+  
 ### pi is not detected
 
 - Make sure `pi` is installed and available on your shell `PATH`.
@@ -109,6 +112,8 @@ Please feel free to provide feedback and/or [report issues](https://github.com/c
 - Allow microphone access for VS Code in your OS privacy or audio settings.
 - On unsupported platforms, the microphone button explains that dictation is unavailable.
 - To collect troubleshooting logs, enable `pi.diagnostics.enabled`, reproduce the issue, then run **pi: Export Diagnostics Log...** and include the exported file with your report.
+
+</details>
 
 ## Diagnostics
 
